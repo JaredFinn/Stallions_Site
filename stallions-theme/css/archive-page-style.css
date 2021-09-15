@@ -1,0 +1,62 @@
+
+.archives-widget-left {
+  float: left;
+  width: 50%;
+}
+
+.archives-widget-right {
+  float: left;
+  padding-left: 4%;
+  width: 46%;
+}
+
+.archives-latest-section { }
+.archives-latest-section ol {
+  font-style: italic;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.archives-latest-section ol li {
+  padding-left: 8px;
+}
+
+.archives-authors-section { }
+.archives-authors-section ul {
+  list-style: none;
+  text-align: center;
+  border-top: 1px dotted #888;
+  border-bottom: 1px dotted #888;
+  padding: 10px 0;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+.archives-authors-section ul li {
+  display: inline;
+  padding: 0 10px;
+}
+.archives-authors-section ul li a {
+  text-decoration:none;
+}
+
+.archives-by-month-section {
+   ext-align: center;
+  word-spacing: 5px;
+}
+.archives-by-month-section p {
+  border-top: 1px dotted #888;
+  border-bottom: 1px dotted #888;
+  padding: 15px 0;
+}
+.archives-by-month-section p a {
+  text-decoration:none;
+}
+
+@media only screen and (max-width: 600px) {
+  .archives-widget-left {
+    width: 100%;
+  }
+
+  .archives-widget-right {
+    width: 100%;
+  }
+}

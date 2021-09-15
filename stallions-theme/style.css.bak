@@ -1,0 +1,1591 @@
+/*
+Theme Name: Stallions
+
+Author: TB6 Corp.
+
+*/
+/* Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: #000 url("assets/img/Bkg.png") center top fixed no-repeat;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset END */
+/* Fonts */
+@font-face {
+    
+}
+/* Fonts END */
+/* Global */
+html {
+    
+}
+body {
+    max-width: 996px;
+    height: fit-content;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+/* Global END */
+/* Header */
+.headerw{
+}
+.bannerw{
+    background: url("assets/img/header-bg.png") no-repeat;
+    background-size: cover;
+    max-height: 158px;
+}
+.logow img{
+    padding-left: 1%;
+}
+.numberw{
+    border-top: 5px solid white;
+    background: #fff url("assets/img/slant-bg.png") no-repeat;
+    min-height: 36px;
+    display: grid;
+    grid-template-columns: 55% 40%;
+}
+.numberw a:link {
+  color: white;
+}
+
+.icons{
+    color: gray;
+}
+.number{
+    text-align: right;
+    padding-right: 100px;
+    color: white;
+}
+.number, .stayconnected{
+    font-size: 28px;
+    padding-top: 2px;
+}
+.stayconnected{
+    margin-left: 5px;
+}
+/* Header END */
+/* Main Menu */
+.menuw{
+    background-color: #bb952e;
+}
+ul#mainmenu {
+	list-style-type: none;
+    display: table;
+	margin: 0 auto;
+	overflow: hidden;
+    color: white;
+}
+ul#mainmenu:hover{
+    cursor: pointer;
+}
+
+li#mainmenu {
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    vertical-align: middle;
+    padding: 14px 0;
+}
+li#mainmenu:hover{
+    background-color: #333;
+}
+ul#teamdropdown, ul#ticketsdropdown, ul#cantinedropdown, ul#fandropdown, ul#contactdropdown, ul#sponsorshipdropdown{
+    display: none;
+    z-index: 5;
+    position: absolute;
+    background-color: #333;
+    color: #bb952e;
+    text-align: left;
+    margin-top: 14px;
+    font-size: 14px;
+    font-family: arial;
+    border-bottom:10px solid #bb952e;
+}
+li#teamdropdown, li#ticketsdropdown, li#cantinedropdown, li#fandropdown, li#contactdropdown, li#sponsorshipdropdown{
+    padding: 4px 10px;
+    margin: 8px;
+}
+li#teamdropdown:first-child, li#ticketsdropdown:first-child, li#cantinedropdown:first-child, li#fandropdown:first-child, li#contactdropdown:first-child, li#sponsorshipdropdown:first-child{
+    margin-top: 10px;
+}
+li#teamdropdown:last-child, li#ticketsdropdown:last-child, li#cantinedropdown:last-child, li#fandropdown:last-child, li#contactdropdown:last-child, li#sponsorshipdropdown:last-child{
+    margin-bottom: 8px;
+}
+.teammenu:hover > ul#teamdropdown, .ticketsmenu:hover > ul#ticketsdropdown, .cantinemenu:hover > ul#cantinedropdown, .fanmenu:hover > ul#fandropdown, .contactmenu:hover > ul#contactdropdown, 
+.sponsorshipmenu:hover > ul#sponsorshipdropdown{
+    display: block;
+}
+li#teamdropdown:hover, li#ticketsdropdown:hover, li#cantinedropdown:hover, li#fandropdown:hover, li#contactdropdown:hover, li#sponsorshipdropdown:hover{
+    background-color: #bb952e;
+    color: #333;
+}
+.menulink{
+    color: inherit;
+    text-decoration: none;
+}
+a#mainmenu{
+    padding: 11px;
+    color: white;
+    text-decoration: none;
+}
+.teamcheck, .ticketcheck, .cantinecheck, .fancheck, .contactcheck, .sponsorshipcheck{
+    display: none;
+}
+ul#mobilemenu{
+    display:none;
+}
+.mobilecheck{
+    display: none;
+}
+.menuclose{
+    display: none;
+}
+a#mainmenu > i{
+    transition: 0.30s;
+      -webkit-transition: 0.30s;
+      -moz-transition: 0.30s;
+      -ms-transition: 0.30s;
+      -o-transition: 0.30s;
+}
+a#mainmenu:hover > i{
+    transition: 0.30s;
+      -webkit-transition: 0.30s;
+      -moz-transition: 0.30s;
+      -ms-transition: 0.30s;
+      -o-transition: 0.30s;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+}
+.parentlink{
+    display: none;
+}
+
+
+/*FONT AWESOME ICON*/
+.fa-instagram-square:hover{
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook-square:hover{
+      background: #3b5998;
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.fa-twitter-square:hover{
+      background: #1DA1F2;
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-youtube-square:hover{
+      background: #FF0000;
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.fa-instagram-square::before, .fa-facebook-square::before, 
+.fa-twitter-square::before, .fa-youtube-square::before
+{
+  color : #585858;
+}
+/*responsive menu button*/
+nav barIcon{
+    color:white;
+    font-size:30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+
+
+/* Main Menu END */
+/* Footer */
+.footerw{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    min-height: 100px;
+    max-width: 996px;
+    width: auto;
+}
+.copyright{
+    font-size: 14px;
+    padding-top: 40px;
+    padding-left: 15px;
+}
+.perfectgame{
+    background: url("assets/img/pg-logo.png") center center no-repeat;
+    background-size: 100px;
+    height: 82px;
+}
+/* Footer END */
+/* Front Page Content */
+.mainw{
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    height: fit-content;
+    background-color: white;
+}
+.contentw{
+    display: grid;
+    grid-template-columns: 66.6% 33.4%;
+    background-color: #c6d0da;
+    max-height: 400px !important;
+}
+.carouselw{
+    background-color: black;
+    border-right: 3px solid white;
+    height: 400px;
+}
+.carouselh3{
+    color:white;
+    padding-bottom:0;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:left;
+}
+.carouselp{
+    color:white;
+    text-align:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+.owl-dots{
+    top:355px;
+    /*SA theme */
+	position:absolute;
+	width:100%;
+	display:block !important;
+	padding:10px 0px 0px !important;
+	bottom:-22px !important;
+	text-align:center !important;
+	/*font-size:12px !important;*/
+	line-height:12px !important;
+	/* End SA theme*/
+	/* Old Site CSS*/
+	color: #cbb778;
+    /*display: block;*/
+    font-weight: 700;
+    font-size: .875em;
+    height: 26px;
+    /*line-height: 26px;
+    text-align: center;*/
+    text-decoration: none;
+    text-transform: uppercase;
+    /* End Old Site CSS*/
+}
+/*.owl-dot {
+    color: #fff;
+}*/
+/* SA Theme */
+.owl-nav div,
+.owl-nav button {
+	position:absolute;
+	top:50%;
+	padding:2px 0px !important;
+	display:inline-block;
+	margin-top:-20px !important;
+	line-height:30px !important;
+	height:40px !important;
+	width:30px !important;
+	color:transparent !important;
+	transition:all .3s ease-in-out !important;
+	-webkit-transition:all .3s ease-in-out !important;
+	-moz-transition:all .3s ease-in-out !important;
+	-o-transition:all .3s ease-in-out !important;
+}
+.owl-nav .owl-prev {
+	left:10px;
+}
+.owl-nav .owl-next {
+	right:10px;
+}
+.owl-nav .owl-prev {
+	background:rgba(0,0,0,0.3) url('./images/icon_prev.png') no-repeat center center !important;
+}
+/*.white */.owl-nav .owl-next {
+	background:rgba(0,0,0,0.3) url('./images/icon_next.png') no-repeat center center !important;
+}
+/*.white */.owl-nav .owl-prev:hover,
+/*.white */.owl-nav .owl-next:hover {
+	background-color:rgba(0,0,0,0.8) !important;
+}
+/* End SA theme*/
+div.owl-dots > button.owl-dot[role="button"]{
+    width:23%;
+    height:30px;
+    border:1px solid black;
+    margin:0 1%;
+    background-color:#333;
+}
+div.owl-dots > button.active[role="button"]{
+    background-color:#bb952e;
+    color: #fff;
+}
+
+.uppercontentw{
+    display:grid;
+    grid-template-rows:40% 60%;
+    background-color:gray;
+    min-width: 226px !important;
+    min-height:150px !important;
+}
+.countdownw{
+    max-height: 120px;
+    border-bottom: 3px solid white;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    
+}
+.eventlistw{
+    
+    max-height: 280px;
+    padding-top:5px;
+    margin:5px;
+}
+
+
+.midcontentw{
+    display: grid;
+    grid-template-columns:33.3% 33.3% 33.4%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: gray;
+}
+.fpparty{
+    border-right: 3px solid white;
+    background: url("assets/img/party.jpg") no-repeat;
+    height:226px;
+}
+.fptickets{
+    border-right: 3px solid white;
+    height:226px;
+}
+.buytickets{
+    height:118px;
+    background: url("assets/img/tickets.jpg") no-repeat;
+    border-bottom:5px solid white;
+}
+.watchlive{
+    height:104px;
+    background: url("assets/img/watch-live.jpg") no-repeat;
+}
+.fpstandings{
+    background: url("assets/img/STANDINGS.jpg") no-repeat;
+    background-size:340px 226px;
+    height:226px;
+}
+.lowercontentw{
+    display:grid;
+    grid-template-columns:50% 50%;
+    background-color:gray;
+    min-width: 226px !important;
+    min-height:150px !important;
+}
+
+.lowercontentmobile{
+    display: none;
+}
+.sponsors{
+    border-right: 3px solid white;
+    height:150px;
+}
+.fanoftheweek{
+    background: url("assets/img/fan-of-the-week.jpg") no-repeat;
+    background-size: cover;
+    height:150px;
+}
+/* END Front Page Content */
+/* Content Defaults */
+.pagew{
+    font-family: arial;
+    background-color: white;
+    padding: 15px;
+    line-height: 1.4;
+    
+}
+.imgcontent{
+    display: block;
+    margin: auto;
+}
+h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #bb952e;
+    text-align: center;
+}
+.cantinew > h4, .cantinemapw > h4, .fanzonew > h4, .leftcol > h4, .rightcol > h4, .ticketsw > h4, .teamw > h4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cantinemapw{
+    height:1550px;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.listcontent{
+    list-style:initial;
+    padding: 0 25px;
+}
+.doublecolw{
+    display:block;
+    
+}
+.leftcol{
+   text-align:center;
+   min-height: 700px !important;
+   margin: 30px;
+   padding-bottom: 100px;
+}
+b{
+    font-weight:bold;
+}
+.imgrow{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 25% 30% 35%;
+    grid-gap:15px;
+}
+/* END Content Defaults */
+/* Tickets Content */
+.tableh{
+    text-align:left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.labeltable{
+    width: 650px;
+}
+.pricetable{
+    width: 100px;
+}
+.graybg{
+    background-color: #ccc;
+}
+.yellowbg{
+    background-color: #876f2c;
+    color: white;
+}
+.graybg > td, .yellowbg > td{
+    padding: 8px 0;
+    padding-left: 2px;
+    border: 1px solid white;
+}
+.tickettable{
+    margin: 12px 0;
+}
+.tickets{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.ticketimg{
+    margin-top:40px;
+    margin-left:30px;
+    width: 50%;
+}
+.buyticketw{
+    text-align:center;
+}
+/* END Tickets Content */
+/* Team/Profile Content */
+.profilesw{
+    background-color: white;
+}
+
+li.profiles{
+    float:left;
+    width:25%;
+    height:300px;
+    text-align:center;
+}
+ul.profiles{
+    margin-top:30px;
+}
+.profilename{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+.profileimg{
+    width:200px;
+    height:183px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.profilerole{
+    font-size:14px;
+}
+.bioimg{
+    float:right;
+}
+.bio > h2{
+    font-weight: bold;
+    font-size: 32px;
+}
+.bio > h4{
+    padding-top: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.bio > p{
+    text-align: justify;
+}
+
+li.profiles > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li.profiles > a:hover > img{
+    opacity: 50%;
+}
+.teamw #media440{
+    display:none;
+}
+.rostertable{
+    margin-left:30px;
+    margin-right:30px;
+    width:95%;
+    font-size:10pt;
+    
+}
+.rosterimg{
+    width:50px;
+    height:50px;
+    border: 1px solid black;
+    border-radius:3px;
+}
+.rosterpos{
+    background-color:#ddd;
+    padding:2px;
+    font-weight:bold;
+}
+.rosterstats{
+    color:white;
+    background-color:black;
+    border-bottom:3px solid #D59F0E;
+}
+.rosterpos > td, .rosterstats > td{
+    padding:3px;
+    font-weight:bold;
+}
+.rosterbody > tr.rosterplayer:nth-child(odd){
+    background-color: #f8f8f8;
+}
+.rosterbody > tr.rosterplayer:nth-child(even){
+    background-color: #f1f1f1;
+}
+.rosterplayer > td:nth-child(n+1) {
+    vertical-align: middle;
+    padding-right:10px;
+}
+.rosterplayer > td:nth-child(2){
+    font-weight: bold;
+}
+.rosterplayer > td > a{
+    color:black;
+    text-decoration: none;
+}
+.playerbiow > h2{
+    font-size:28px;
+    font-weight:bold;
+    padding-bottom:15px;
+}
+.playerbiow > h3{
+    font-size: 20px;
+    color:black;
+    text-align:left;
+}
+.playerbiow > h4{
+    padding:0px;
+    font-size:16px;
+    font-weight:normal;
+}
+.boardw, .fofficew{
+    height:1100px;
+}
+.coachesw{
+    height: 500px;
+}
+/* END Team/Profile Content */
+/* Cantine Policy */
+.policy{
+    margin-top:20px;
+}
+.policytitle{
+    background-color:#bb952e;
+    padding:5px;
+    border:1px solid black;
+    border-radius: 2px;
+    font-weight:bold;
+    box-shadow: 2px 2px 3px #888888;
+}
+.policyinfo{
+    max-height:0;
+    overflow: hidden;
+    margin: 10px;
+    font-size: 14px;
+    transition: max-height 0.5s ease;
+}
+.policycheck{
+    position: absolute;
+    z-index: 2;
+    width: 960px;
+    height:31px;
+    padding: 0px;
+    opacity: 0;
+}
+.policycheck:hover{
+    cursor: pointer;
+}
+.policy input:checked ~ .policyinfo{
+    max-height:100px;
+}
+
+
+/* END Content Policy */
+
+/*SPONSOR*/
+.sponsor-collectionstyles{
+	padding: 28px 15px 25px;
+}
+.section-titlestyles_Container{
+	margin-bottom: 30px;
+}
+.section-titlestyles_TitleContainer{
+	display:inline-block;
+}
+.section-titlestyles_Title-sc{
+	 color: rgb(51, 51, 51);
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+.section-titlestyles_BottomLine-sc{
+	border-bottom: 4px solid #bb952e;
+    margin-top: 11px;
+    width: 80px;
+}
+
+.sponsor-collectionstyles{
+	display: flex;
+	flex-wrap:wrap;
+	-webkit-box-pack:justify;
+	justify-content: space-between;
+	flex-basis:50%;
+}
+.sponsor-collectionstyles:nth-child(2n+1){
+	padding-right:25px;
+}
+.sponsor-cardstyles_Container{
+    border-right: 4px solid #585858;
+    border-bottom: 4px solid #585858;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  	width:430px !important;
+  	margin-bottom:25px;
+}
+.sponsor-cardstyles_SponsorInfoContainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 7px 10px 10px;
+}
+.sponsor-cardstyles_SponsorImage{
+	height:112px;
+	width:112px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.sponsor-cardstyles_SponsorImage img{
+    max-width: 112px;
+    max-height: 112px;
+
+}
+.sponsor-cardstyles_SponsorName{
+	color: rgb(51, 51, 51);
+	font-size: 20px;
+	font-weight:bold;
+	margin-top:2px;
+	margin-bottom:5px;
+	text-transform:uppercase;
+}
+.sponsor-cardstyles_SponsorDescription{
+	color: rgb(153, 153, 153);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+}
+/*END SPONSOR*/
+
+/* Contact Forms */
+
+/* CUF = Contact Us Form */
+/* CAF = Community Appearance Form */
+/* DR = Donation Requests */
+
+.contactw > h4{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contactw > h5{
+    font-style:italic;
+    padding-bottom:15px;
+}
+.contactusform, .communityform{
+    font-weight:bold;
+}
+.cufname > label, .cufphone > label, .cufemail > label, .cufmsg > label{
+    
+}
+.cufinput, .cufmsginput{
+    margin:15px;
+    width: 300px;
+}
+.cafinput, .cafmsginput{
+    margin:15px;
+    width: 250px;
+}
+.cafcheck{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.cafmsg > p{
+    padding: 0;
+}
+.cufmsginput{
+    width: 400px;
+    height: 100px;
+}
+.cufbutton, .cafbutton, .drbutton{
+    background-color:black;
+    color: white;
+}
+.drinput, .drdropdown, .drradio{
+    margin:15px;
+    width:250px;
+}
+/* END Contact Forms */
+/* News Article */
+/*img {
+    max-width: 100%; 
+    height: auto;
+}*/
+/* END News Article*/
+/* News Archive*/
+#archivelinks li{
+    display: inline;
+} 
+/*section.news_article_section{
+    padding-left:150px !important;
+    padding-right:150px !important;
+}*/
+#articlelink:hov{
+    color:red;
+    text-decoration:underline;
+}
+.news_article_section a{
+    text-decoration:none;
+}
+/* END News Archive*/
+
+
+/* SCHEDULE */
+    #content-mobile {
+        visibility:hidden !important;
+        
+    }
+/* SCHEDULE */
+
+
+/* 1008px MEDIA QUERY */
+@media only screen and (max-width: 1008px){
+    /* Main Menu/Header */
+    .bannerw{
+        background: url("assets/img/header-bg.png") no-repeat;
+        background-size: cover;
+        max-height: 130px;
+    }
+
+    ul#mainmenu{
+        z-index: 2;
+        position: fixed;
+        background-color: #bb952e;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        left: -500px;
+        top: 0;
+        height: 100%;
+        width: 35%;
+        margin-top: 0px;
+        transition: left 0.5s ease;
+    }
+    li#mainmenu{
+        width:100%;
+        border-top:1px solid #333;
+        padding:0;
+        min-height:60px;
+    }
+    li#mainmenu > a#mainmenu{
+        line-height:60px;
+    }
+    li#mainmenu:last-child{
+        border-bottom:1px solid #333;
+    }
+    ul#teamdropdown, ul#ticketsdropdown, ul#cantinedropdown, ul#fandropdown, ul#contactdropdown, ul#sponsorshipdropdown{
+        width:100%;
+        z-index:0;
+        position: relative;
+        border-bottom:none;
+        font-size:16px;
+        margin-top:0;
+    }
+    li#teamdropdown, li#ticketsdropdown, li#cantinedropdown, li#fandropdown, li#contactdropdown, li#sponsorshipdropdown{
+        padding: 16px 12px;
+        margin:0;
+        border-top:1px solid black;
+    }
+    li#teamdropdown:first-child, li#ticketsdropdown:first-child, li#cantinedropdown:first-child, li#fandropdown:first-child, li#contactdropdown:first-child, li#sponsorshipdropdown:first-child{
+        margin-top: 0;
+        padding-top:17px;
+    }
+    li#teamdropdown:last-child, li#ticketsdropdown:last-child, li#cantinedropdown:last-child, li#fandropdown:last-child, li#contactdropdown:last-child, li#sponsorshipdropdown:last-child{
+        margin-bottom: 0;
+    }
+    .teammenu:hover > ul#teamdropdown, .ticketsmenu:hover > ul#ticketsdropdown, .cantinemenu:hover > ul#cantinedropdown, .fanmenu:hover > ul#fandropdown, .contactmenu:hover > ul#contactdropdown,
+    .sponsorshipmenu:hover > ul#sponsorshipdropdown{
+        display: none;
+    }
+    .teamcheck, .ticketcheck, .cantinecheck, .fancheck, .contactcheck, .sponsorshipcheck{
+        opacity:0;
+        display:block;
+        position:absolute;
+        margin:0;
+        width:100%;
+        height:60px;
+    }
+    .teamcheck:hover, .ticketcheck:hover, .cantinecheck:hover, .fancheck:hover, .contactcheck:hover, .sponsorshipcheck:hover{
+        cursor:pointer;
+    }
+    li#mainmenu:hover{
+        background-color: #bb952e;
+    }
+    .teamcheck:checked ~ ul#teamdropdown, .ticketcheck:checked ~ ul#ticketsdropdown, .cantinecheck:checked ~ ul#cantinedropdown, .fancheck:checked ~ ul#fandropdown, .contactcheck:checked ~ ul#contactdropdown,
+    .sponsorshipcheck:checked ~ ul#sponsorshipdropdown{
+        display: block;
+    }
+    ul#mobilemenu {
+        display: block;
+        list-style-type: none;
+        display: table;
+        margin: 0 auto;
+        overflow: hidden;
+        color: white;
+        cursor:pointer;
+    }
+    li#mobilemenu {
+        float: left;
+        text-align: center;
+        font-size: 24px;
+        vertical-align: middle;
+        padding: 14px 0;
+    }
+    .parentlink{
+        display: block;
+    }
+    .mobilecheck{
+        position: absolute;
+        display: block;
+        z-index:2;
+        opacity: 0;
+        width:100%;
+        height:50px;
+    }
+    .mobilecheck:hover{
+        cursor: pointer;
+    }
+    .mobilecheck:checked{
+        height:100%;
+        position:fixed;
+        top: 0;
+    }
+    .mobilecheck:checked ~ ul#mainmenu{
+        left: 0;
+    }
+    .numberw{
+        background-size: 50% 30px;
+    }
+    /* END Main Menu/Header */
+    /* Main Content */
+    .countdown{
+        font-size:18px;
+    }
+    .midcontentw{
+    }
+    .fpparty{
+        height:200px;
+        background-size: 100% 200px;
+    }
+    .fptickets{
+        height:200px;
+    }
+    .buytickets{
+        height: 100px;
+        background-size: 100% 100px;
+    }
+    .watchlive{
+        height: 95px;
+        background-size: 100% 95px;
+    }
+    .fpstandings{
+        height:200px;
+        background-size: 100% 200px;
+    }
+    .lowercontentw{
+    }
+    .sponsors{
+        height:150px;
+    }
+    .fanoftheweek{
+        height:150px;
+        background-size: 100% 150px;
+    }
+    .boardw, .fofficew{
+        height:1350px;
+    }
+    li.profiles{
+        width: 33%;
+    }
+    .cantinemapw{
+        height:1600px;
+    }
+    /* END Main Content */
+}
+/* END 1008px MEDIA QUERY */
+/* 768px MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+    #DESKTOP{
+        display:none !important;
+    }
+    #media440{
+        display:block !important;
+    }
+    nav{
+        position:relative;
+    }
+    ul#mobilemenu{
+        min-height:35px;
+    }
+    ul#mobilemenu li{
+        font-size:20pt;
+    }
+    ul#mainmenu{
+        position:absolute;
+        width:100%;
+        height:80;
+        top:50px;
+        left: -100%;
+        text-align: center;
+        background: #BB952E;
+        transition: all .5s;
+    }
+    li#mainmenu{
+        position:relative;
+        display:block;
+        margin:5px 0;
+        font-size:14pt;
+        float: none;
+    }
+
+    .logow img{
+        padding-left:5px;
+        height: 150px;
+    }
+    /* Main Content */
+    .contentw{
+        display: block;
+    }
+    .carouselw{
+        border-right: 0;
+        border-bottom:3px solid white;
+    }
+    .numberw{
+        min-height:40px;
+    }
+    .countdown{
+        background: url("assets/img/countdown-bg.jpg") no-repeat center;
+        font-size:20px;
+    }
+    .midcontentw{
+        grid-template-columns: 50% 50%;
+    }
+    .fpparty{
+        height:226px;
+
+    }
+    .stayconnected{
+        font-size:15pt;
+    }
+    .fptickets{
+        height:226px;
+        border-right: none;
+    }
+    .buytickets{
+        height: 113px;
+        background-size: 100% 113px;
+    }
+    .watchlive{
+        height: 108px;
+        background-size: 100% 108px;
+    }
+    .fpstandings{
+        height:226px;
+        background-size: 100% 226px;
+        border-top:3px solid white;
+    }
+    .lowercontentw{
+        display: none;
+    }
+    .sponsors{
+        height:100px;
+        border-top:3px solid white;
+        border-bottom:3px solid white;
+    }
+    .fanoftheweek{
+        height:125px;
+        background-size: 100% 125px;
+        border-right:3px solid white;
+    }
+    .lowercontentmobile{
+        display: block;
+    }
+    .boardw{
+        height: 1650px;
+    }
+    .fofficew{
+        height: 1800px;
+    }
+    li.profiles{
+        width:50%;
+    }
+    .rosterplayer > td:nth-child(3), .rosterstats > td:nth-child(3){
+        display: none;
+    }
+    .cantinemapw{
+        height:1700px;
+    }
+    .doublecolw{
+        display: block;
+    }
+    .rightcol{
+        padding-left:25px;
+        padding-top:15px;
+    }
+
+    /* END Main Content */
+}
+/* END 768px MEDIA QUERY*/
+/* 640px MEDIA QUERY */
+@media only screen and (max-width: 640px) {
+    .pagew{
+        min-height:1500px;
+    }
+    #DESKTOP{
+        display:none !important;
+    }
+    #media440{
+        display:block !important;
+    }
+    nav{
+        position:relative;
+    }
+    ul#mobilemenu{
+        min-height:50px;
+    }
+    ul#mobilemenu li{
+        font-size:30;
+    }
+    ul#mainmenu{
+        position:absolute;
+        width:100%;
+        height:80;
+        top:50px;
+        left: -100%;
+        text-align: center;
+        background: #BB952E;
+        transition: all .5s;
+    }
+    li#mainmenu{
+        position:relative;
+        display:block;
+        margin:5px 0;
+        font-size:14pt;
+        float: none;
+    }
+    .stayconnected{
+        display:none;
+    }
+    .uppercontentw{
+        display:block;
+        width:100%;
+        border-bottom:3px solid white;
+    }
+    .countdownwid{
+        width:100%;
+         display: block;
+         max-height:110px;
+    }
+    .eventlistw{
+         display: block;
+    }
+    .bannerw{
+        background-size: cover;
+        max-height: 90px;
+    }
+    .contentw{
+        display:block;
+        min-height:645px;
+    }
+    .number{
+        padding:0 !important;
+        text-align: center !important;
+        
+        font-size:34px;
+    }
+    .numberw{
+        display:block;
+        height:50px;
+        background:gray;
+    }
+    .logow img{
+        padding-left:5px;
+        height: 105px;
+    }
+    .lowercontent{
+        display: none;
+    }
+    .stayconnected, .number{
+        font-size:35px;
+    }  
+    .rosterplayer > td:nth-child(6), .rosterstats > td:nth-child(6), .rosterplayer > td:nth-child(7), .rosterstats > td:nth-child(7), .rosterplayer > td:nth-child(3), .rosterstats > td:nth-child(3){
+        display: none;
+    }
+    .cantinemapw{
+        height:1800px;
+    }
+    .fanzonew .leftcol{
+        padding-bottom: 250px;
+    }
+    .leftcol{
+        padding:0;
+    }
+    .ticketimg{
+        margin-left:15px;
+        width: 75%;
+    }
+    .policy input:checked ~ .policyinfo{
+        max-height:150px;
+    }
+}
+/* END 640px MEDIA QUERY */
+/* 480px MEDIA QUERY */
+
+@media only screen and (max-width: 480px) {
+    .pagew{
+        min-height:1500px;
+    }
+    #DESKTOP{
+        display:none !important;
+    }
+
+    #media440{
+        display:block !important;
+    }
+    nav{
+        position:relative;
+    }
+    ul#mobilemenu{
+        min-height:50px;
+    }
+    ul#mobilemenu li{
+        font-size:30;
+    }
+    ul#mainmenu{
+        position:absolute;
+        width:100%;
+        height:80;
+        top:50px;
+        left: -100%;
+        text-align: center;
+        background: #BB952E;
+        transition: all .5s;
+    }
+    li#mainmenu{
+        position:relative;
+        display:block;
+        margin:5px 0;
+        font-size:14pt;
+        float: none;
+    }
+    .logow{
+        min-height:105px;
+    }
+    .contentw{
+        display:block;
+        min-height:645px;
+    }
+    .numberw{
+        display:block;
+        height:50px;
+        background:gray;
+    }
+    .number{
+        padding:0 !important;
+        text-align: center !important;
+        font-size:34px;
+    }
+    
+    .stayconnected{
+        display:none;
+    }
+    .uppercontentw{
+        display:block;
+        width:100%;
+        border-bottom:3px solid white;
+    }
+    .countdownwid{
+        width:100%;
+         display: block;
+         max-height:110px;
+    }
+    .eventlistw{
+         display: block;
+    }
+    .midcontentw{
+        display: block;
+        position:relative;
+    }
+    .fpparty{
+         background-size: 100% 225px;
+        border-right:none;
+        border-bottom:3px solid white;
+    }
+    .fptickets{
+        height:248px;
+    }
+    .buytickets{
+        height: 125px;
+        background-size: 100% 125px;
+    }
+    .watchlive{
+        height: 120px;
+        background-size: 100% 120px;
+    }
+    .sponsors, .fanoftheweek{
+        border-right:0;
+    }
+    .boardw, .fofficew{
+        height: 4000px;
+        
+    }
+    .boardw p{
+        font-size:27px !important;
+    }
+
+    li.profiles{
+        width:60%;
+        display:inline-block;
+        text-align:center;
+        margin-left:70px;
+    }
+    .profileimg{
+        width:250px;
+        height:230px;
+    }
+    .bioimg{
+        float:none;
+    }
+    .cantinemapw h4{
+        font-size:25pt;
+    }
+    .cantinemapw p{
+        font-size:20pt;
+    }
+    
+    .cantinemapw{
+        width:100%;
+        min-height:3500;
+        margin-right:10px;
+    }
+    
+    .cantinew h4{
+        font-size:30pt;
+    }
+    .cantinew p{
+        font-size:15pt;
+    }
+    .policytitle{
+        font-size:25pt;
+    }
+    .policyinfo{
+        font-size:20pt;
+    }
+    .ticketimg{
+        width: 100%;
+    }
+    .policy input:checked ~ .policyinfo{
+        max-height:250px;
+    }
+    .rostertable{
+        width:95%;
+        font-size:18pt;
+    }
+    .rosterimg{
+        width:50px;
+        height:50px;
+        border: 1px solid black;
+        border-radius:3px;
+    }
+    .rosterpos{
+        background-color:#ddd;
+        padding:2px;
+        font-weight:bold;
+    }
+    .teamw h4{
+    font-size:30px;
+    }
+    .rosterstats{
+        color:white;
+        background-color:black;
+        border-bottom:3px solid #D59F0E;
+    }
+    .rosterstats td:nth-child(7){
+        display:none;
+    }
+    .rosterstats td:nth-child(8){
+        display:none;
+    }
+    .rosterpos > td, .rosterstats > td{
+        padding:3px;
+        font-weight:bold;
+    }
+    .rosterplayer > td:nth-child(7) {
+       display:none;
+    }
+    .rosterplayer > td:nth-child(8) {
+       display:none;
+    }
+    .rosterplayer > td:nth-child(n+1) {
+        vertical-align: middle;
+        padding-right:10;
+    }
+    .rosterplayer > td:nth-child(2){
+        font-weight: bold;
+    }
+    .rosterplayer > td > a{
+        color:black;
+        text-decoration: none;
+    }
+    .playerbiow > h2{
+        font-size:28px;
+        font-weight:bold;
+        padding-bottom:15px;
+    }
+    .playerbiow > h3{
+        font-size: 20px;
+        color:black;
+        text-align:left;
+    }
+    .playerbiow > h4{
+        padding:0px;
+        font-size:16px;
+        font-weight:normal;
+    }
+
+    .coachesw{
+        height: 500px;
+    }
+    
+    .appearanceForm{
+        margin:20px;
+        padding-top: 100px;
+    }
+    .fanzonew{
+        display:block;
+    }
+    .doublecolw .leftcol{
+        margin-bottom:300px;
+    }
+    .leftcol{
+        min-height:300px;
+        padding-bottom:10px;
+    }
+    .fanzonew .doublecolw h4{
+        font-size:15pt;
+    }
+    
+    .schedulew{
+        
+        min-height:800px;
+    }
+    .sp-table-caption{
+        font-size:20pt;
+    }
+    .sp-calendar sp-event-calendar sp-data-table thead tr{
+        min-height:20px;
+    }
+    .sp-calendar sp-event-calendar sp-data-table thead tr{
+        min-height:50px;
+    }
+    /*Contact Us Form*/
+    .wpcf7 input.wpcf7-text { width: 50%; margin-top:10 }
+    .wpcf7-form input.wpcf7-text { height: 5%; }
+    
+    .wpcf7 input.wpcf7-number { width: 50%; margin-top:10 }
+    .wpcf7-form input.wpcf7-number { height: 5%; }
+    
+    .wpcf7 textarea.wpcf7-textarea { width: 60%; }
+    .wpcf7-form textarea { height: 85px; width: 40% }
+    
+    .wpcf7 input.wpcf7-select {width: 50%; margin-top:10 }
+    .wpcf7-form select { height: 5%; }
+    
+    .wpcf7 input.wpcf7-date {width: 50%; margin-top:10 }
+    .wpcf7-form date { height: 5%; }
+        
+    
+    /*SPONSOR*/
+    
+    .section-titlestyles_Container{
+    	margin-bottom: 30px;
+    }
+    .section-titlestyles_TitleContainer{
+    	display:inline-block;
+    }
+    .section-titlestyles_Title-sc{
+    	color: rgb(51, 51, 51);
+        display: inline-block;
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .section-titlestyles_BottomLine-sc{
+    	border-bottom: 4px solid #bb952e;
+        margin-top: 11px;
+        width: 80px;
+    }
+    .sponsor-cardstyles_Container{
+      	width:300px !important;
+      	margin-bottom:10px;
+    }
+    .sponsor-collectionstyles{
+    	display: flex;
+    	flex-wrap:wrap;
+    	-webkit-box-pack:justify;
+    	justify-content: space-between;
+    }
+    .sponsor-collectionstyles:nth-child(2n+1){
+    	padding-right:0;
+    }
+    .sponsor-cardstyles_Container{
+        border-right: 4px solid #585858;
+        border-bottom: 4px solid #585858;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }
+    .sponsor-cardstyles_SponsorInfoContainer{
+        padding: 7px 10px 10px;
+    }
+
+    .sponsor-cardstyles_SponsorName{
+    	color: rgb(51, 51, 51);
+    	font-size: 20px;
+    	font-weight:bold;
+    	margin-top:2px;
+    	margin-bottom:5px;
+    	text-transform:uppercase;
+    }
+    .sponsor-cardstyles_SponsorDescription{
+    	color: rgb(153, 153, 153);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.14;
+    }
+    /*END SPONSOR*/
+}
+/* END 480px MEDIA QUERY */
