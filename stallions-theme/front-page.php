@@ -152,7 +152,7 @@ endif;?>
                 </div> 
                 
         <div class="uppercontentw">
-                <?php if (false): ?>
+                 <?php if (false): ?>
 					<div class="countdownwid">
 						 <?php if ( is_active_sidebar( 'countdown-widget' ) ) : ?>
 							<div id="main-slider-widget-area" class="widget-area" role="complementary">
@@ -170,9 +170,8 @@ endif;?>
 					</div>
 				<?php else: ?>
 					<div class="fronttwitterfeed">
-						<div class="nextgame" style="height:100px">
+						<div class="nextgame" style="height:0px">
 							<?php 
-							
 							
 							
 							
@@ -394,7 +393,7 @@ endif;
 
 						
 						</div>
-						<a class="twitter-timeline" data-lang="en" data-height="300" href="https://twitter.com/PGCBLStallions?ref_src=twsrc%5Etfw">Tweets by PGCBLStallions</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<a class="twitter-timeline" data-lang="en" data-height="400" href="https://twitter.com/PGCBLStallions?ref_src=twsrc%5Etfw">Tweets by PGCBLStallions</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 					</div>
 				<?php endif; ?>
         </div>
