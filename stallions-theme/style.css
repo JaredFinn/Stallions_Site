@@ -261,22 +261,23 @@ nav barIcon{
 /* Main Menu END */
 /* Footer */
 .footerw{
-    background-color: white;
+    background-color: #f9f9f9;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 42.5% 15% 42.5%;
     min-height: 100px;
     max-width: 1200px;
     width: auto;
+    padding-top: 20px;
 }
 .copyright{
     font-size: 14px;
     padding-top: 40px;
-    padding-left: 15px;
+    padding-left: 240px;
 }
 .address{
     font-size: 14px;
     padding-top: 40px;
-    padding-right: 15px;
+    padding-right: 234px;
 	text-align: right;
 }
 .perfectgame{
@@ -448,9 +449,10 @@ div.owl-dots > button.active[role="button"]{
 .lowercontentw{
     display:grid;
     grid-template-columns:50% 50%;
-    background-color:gray;
+    background-color:rgb(255, 255, 255);
     min-width: 226px !important;
     min-height:150px !important;
+    padding-bottom: 100px;
 }
 
 .lowercontentmobile{

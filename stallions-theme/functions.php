@@ -3,6 +3,7 @@ require get_template_directory() . '/archives-page-functions.php';
 //update_option( 'siteurl', 'https://chris.fishcreekrent.com/' );
 //update_option( 'home', 'https://chris.fishcreekrent.com/' );
 
+
 function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
     register_sidebar(
@@ -35,6 +36,26 @@ function my_register_sidebars() {
         'before_title' => '<h2 class="rounded">',
         'after_title' => '</h2>',
     ) );
+
+    register_sidebar(array(
+        'name' => 'Ad_Section',
+        'id' => 'ad', 
+        'before_widget' => '<div class = "Ad_Section">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name' => 'Calendar',
+        'id' => 'cal', 
+        'before_widget' => '<div class = "Calendar">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ));
+
+    
 }
 add_action( 'widgets_init', 'my_register_sidebars' );
 

@@ -419,6 +419,11 @@ endif;
                 <a href="http://pgcbl.bbstats.pointstreak.com/standings.html?leagueid=1710&seasonid=32993" target=_blank><div class="fpstandings">
                     </div></a>
             </div>
+				
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Ad_Section") ) : ?>
+    		<?php endif;?>
+
+
             <div class="lowercontentw">
                 <a href="/coming-soon-page/">
                 <div class="fanoftheweek">
