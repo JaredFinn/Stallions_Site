@@ -267,8 +267,16 @@ nav barIcon{
     min-height: 100px;
     max-width: 1200px;
     width: auto;
-    padding-top: 20px;
 }
+
+#div_top_hypers {
+    background-color:#eeeeee;
+    display:inline;      
+}
+#ul_top_hypers li{
+    display: inline;
+}
+
 .copyright{
     font-size: 14px;
     padding-top: 40px;
@@ -292,6 +300,7 @@ nav barIcon{
     border-bottom: 3px solid white;
     height: fit-content;
     background-color: white;
+    padding-bottom: 100px;
 }
 .contentw{
     display: grid;
@@ -474,7 +483,7 @@ div.owl-dots > button.active[role="button"]{
     background-color: white;
     padding: 15px;
     line-height: 1.4;
-    
+    padding-bottom: 100px;
 }
 .imgcontent{
     display: block;
@@ -2022,6 +2031,7 @@ tbody, tfoot, thead, tr, th, td, caption{
 @media only screen and (max-width: 640px) {
     .pagew{
         min-height:1500px;
+        padding-bottom: 100px;
     }
     #DESKTOP{
         display:none !important;

@@ -376,21 +376,6 @@ endif;
 		echo '<div class="sp-calendar-link sp-view-all-link"><a href="' . get_permalink( $id ) . '">' . __( 'View all events', 'sportspress' ) . '</a></div>';
 	?>
 </div>
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-	
-
 						
 						</div>
 						<a class="twitter-timeline" data-lang="en" data-height="400" href="https://twitter.com/PGCBLStallions?ref_src=twsrc%5Etfw">Tweets by PGCBLStallions</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -420,19 +405,26 @@ endif;
                     </div></a>
             </div>
 				
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Ad_Section") ) : ?>
-    		<?php endif;?>
+			
 
 
             <div class="lowercontentw">
                 <a href="/coming-soon-page/">
-                <div class="fanoftheweek">
-                </div></a>
+                	<div class="fanoftheweek">
+                	</div>
+				</a>
 				<div class="sponsors">
-                    <?php echo do_shortcode('[slide-anything id="414"]'); ?>
-                </div>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Ad_Section") ) : ?>
+					<?php endif;?>
+				</div>
+				<!--<div class="sponsors">
+                    <?php// echo do_shortcode('[slide-anything id="414"]'); ?>
+                </div>-->
                 
+				
             </div>
+
+			
         </div>
 <?php
 get_footer();
