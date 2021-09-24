@@ -292,6 +292,7 @@ nav barIcon{
     background: url("assets/img/pg-logo.png") center center no-repeat;
     background-size: 100px;
     height: 82px;
+    padding-top: 20px;
 }
 /* Footer END */
 /* Front Page Content */
@@ -483,7 +484,7 @@ div.owl-dots > button.active[role="button"]{
     background-color: white;
     padding: 15px;
     line-height: 1.4;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .imgcontent{
     display: block;
@@ -2031,7 +2032,7 @@ tbody, tfoot, thead, tr, th, td, caption{
 @media only screen and (max-width: 640px) {
     .pagew{
         min-height:1500px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
     #DESKTOP{
         display:none !important;

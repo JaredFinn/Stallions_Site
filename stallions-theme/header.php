@@ -66,7 +66,7 @@
                                 <a href="/team/coaches/" class="menulink"><li id="teamdropdown">COACHES</li></a>
                             </ul>
                         </li>
-                        <li id="mainmenu"><a href="/schedule/" id="mainmenu">SCHEDULE</a></li>
+                        <li id="mainmenu"><a href="/event/" id="mainmenu">SCHEDULE</a></li>
                         <li id="mainmenu" class="ticketsmenu">
                             <input type="checkbox" class="ticketcheck">
                             <a href="/tickets/info" id="mainmenu">TICKETS <i class="fas fa-caret-right"></i></a>

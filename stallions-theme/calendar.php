@@ -27,8 +27,6 @@ Template Post Type: page
     <?php the_content(); ?>
 <!--application/x-httpd-php event-calendar.php ( PHP script text )-->
 
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Calendar") ) : ?>
-    		<?php endif;?>
 
 <?php
 get_footer();
