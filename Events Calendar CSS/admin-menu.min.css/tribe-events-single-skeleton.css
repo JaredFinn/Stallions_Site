@@ -308,11 +308,11 @@
 .tribe-events-event-image {
     align-self: flex-start;
     margin-bottom: 16px;
-    margin-bottom: var(--tec-spacer-3)
+    margin-bottom: var(--tec-spacer-3);
 }
 
 .tribe-events-event-image img {
-    display: block
+    display: none
 }
 
 .tribe-events-content h2, .tribe-events-content h3, .tribe-events-content h4, .tribe-events-content h5, .tribe-events-content h6 {
