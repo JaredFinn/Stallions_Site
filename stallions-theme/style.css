@@ -65,6 +65,8 @@ body {
     height: fit-content;
     margin: 0 auto;
     border: 3px solid white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 /* Global END */
 /* Header */
@@ -261,12 +263,9 @@ nav barIcon{
 /* Main Menu END */
 /* Footer */
 .footerw{
-    background-color: #f9f9f9;
-    display: grid;
-    grid-template-columns: 42.5% 15% 42.5%;
-    min-height: 100px;
-    max-width: 1200px;
-    width: auto;
+    background-color: #f0f0f0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #div_top_hypers {
@@ -276,11 +275,60 @@ nav barIcon{
 #ul_top_hypers li{
     display: inline;
 }
-
-.copyright{
-    font-size: 14px;
-    padding-top: 40px;
-    padding-left: 240px;
+.nav-list{
+    list-style: none;
+    text-align: center;
+}
+.nav-item{
+    display: inline;
+}
+.item-link{
+    color: black;
+    font-family: Arial;
+    transition: all .25s ease-in-out;
+}
+.item-link:link{
+    text-decoration: none;
+}
+.item-link:hover{
+    padding: 10px;
+}
+#lines{
+    display: inline;
+    padding: 5px;
+}
+.site-general-nav{
+    padding: 20px;
+    font-size: 13px;
+    color: lightgray;
+    text-align: center;
+}
+.general-nav-item{
+    display: inline;
+}
+.general-link{
+    font-family: Arial;
+    text-decoration: none;
+    color: #bfbfbf;
+}
+#dash{
+    display: inline;
+}
+.copyright-element{
+    font-family: Arial;
+    font-size: 12px;
+}
+#copyright{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding-bottom: 20px;
 }
 .address{
     font-size: 14px;
@@ -301,7 +349,7 @@ nav barIcon{
     border-bottom: 3px solid white;
     height: fit-content;
     background-color: white;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .contentw{
     display: grid;
